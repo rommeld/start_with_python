@@ -24,6 +24,13 @@ def purple_shell(racers):
     """
     [racers[0], racers[-1]] = [racers[-1], racers[0]]
 
+def fashionable_late(arrivals, name):
+    arrivals = ['Adela', 'Fleda', 'Owen', 'May', 'Mona', 'Gilbert', 'Ford']
+    name = arrivals[(int(round(len(arrivals)/2,0))):-1]
+    return name
+
+print(name)
+
 a = [1, 2, 3]
 b = [1, [2, 3]]
 c = []
@@ -32,10 +39,3 @@ d = [1, 2, 3][1:]
 # Put your predictions in the list below. Lengths should contain 4 numbers, the
 # first being the length of a, the second being the length of b and so on.
 lengths = [3, 2, 0, 2]
-
-#def fashionable_late(arrivals, name):
-arrivals = ['Adela', 'Fleda', 'Owen', 'May', 'Mona', 'Gilbert', 'Ford']
-name = arrivals[(int(round(len(arrivals)/2,0))):-1]
-#    return name
-
-print(name)
